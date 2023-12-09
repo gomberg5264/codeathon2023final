@@ -2,16 +2,22 @@
   body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("background.jpg");
+    color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("cartoon.png");
+
   }
 
+
+  p {
+    font-size: 20px;
+  }
   nav {
     background-color: #333;
     border-radius: 20px;
-    margin: 2px;
+    margin: 10px;
+  
   }
 
   nav ul {
@@ -85,55 +91,143 @@
   }
 
 .readabilityTop {
-  background-color: rgb(255,255,255,0.7);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background-color: #333;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding-bottom: 4px;
   padding-top: 6px;
   padding-left: 3px;
   padding-right: 3px;
-  margin: 0;
-  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
 }
 
 .readabilityMid {
-  background-color: rgb(255,255,255,0.7);
+  background-color: #333;
   padding-bottom: 4px;
   padding-top: 6px;
   padding-left: 3px;
   padding-right: 3px;
-  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   
 }
 .readabilityBottom {
-  background-color: rgb(255,255,255,0.7);
-  padding-bottom: 4px;
+  background-color: #333;
+  padding-bottom: 6px;
   padding-top: 6px;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .readabilitySingle {
-  background-color: rgb(255,255,255,0.7);
+  background-color: #333;
   border-radius: 10px;
   padding-bottom: 4px;
   padding-top: 6px;
   padding-left: 3px;
   padding-right: 3px;
-  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 
 
 .largeheading {
-  font-size: 30px;
+  font-size: 80px;
   text-align: center;
 }
 
-#accessibilitytext {
+#accessibilityText {
   font-size: 20px;
+}
+
+.contactTable {
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes initBlur {
+  from: {filter:blur(0px);
+         -webkit-filter: blur(0px);}
+  to: {filter:blur(8px);-webkit-filter: blur(8px);}
+}
+
+a {
+  color: #00aaFF
+}
+
+.accessibility-toolbar {
+  background-color: #333;
+}
+
+#increase-text {
+  background-color: white;
+  border-radius: 10px;
+  color:black;
+}
+
+#decrease-text {
+  background-color: white;
+  border-radius: 10px;
+  color:black;
+}
+
+#hide-accessibility {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+#homepagetext1 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#homepagevideo {
+  text-align: center;
+}
+
+#homepagevideoembed {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  height: 145px;
+  width: 300px;
+}
+
+
+
+.forminput input {
+  font-size: 20px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: grey;
+}
+
+.submit-button {
+  background-color:white;
+  padding: 4px;
+  color: black;
+  text-decoration: none;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: grey;
+  border-style: solid;
+  margin: 2px
 }

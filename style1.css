@@ -1,0 +1,36 @@
+#accessibility-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    z-index: 1000;
+}
+
+#accessibility-toolbar button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accessibility-toolbar button:focus {
+    outline: none;
+}
+
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+body.large-text p {
+    font-size: 110%;
+}
+body.small-text p {
+  font-size: 90%;
+}

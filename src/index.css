@@ -1,32 +1,139 @@
-/* src/index.css */
-body {
+  /* src/index.css */
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("cartoon.png");
+  }
+
+  nav {
+    background-color: #333;
+    border-radius: 20px;
+    margin: 2px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  nav li {
+    float: left;
+    width: 20%;
+  }
+
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+  nav li a:hover {
+    background-color: #111;
+  }
+
+  /* Styling for different width buttons */
+  button {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .button-25 {
+    width: 10%;
+    background-color: #007bff;
+  }
+
+  .button-50 {
+    width: 10%;
+    background-color: #28a745;
+  }
+
+  .button-100 {
+    width: 10%;
+    background-color: #dc3545;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .logo {
+    width: 100px;  /* Adjust the width as per your logo size */
+    margin-right: 20px;
+  }
+
+  .leftedge {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .rightedge {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+.readabilityTop {
+  background-color: rgb(255,255,255,0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
   margin: 0;
-  font-family: sans-serif;
+  
+
 }
 
-nav {
-  background-color: #333;
-}
-
-nav ul {
-  list-style-type: none;
+.readabilityMid {
+  background-color: rgb(255,255,255,0.7);
+  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+  
+}
+.readabilityBottom {
+  background-color: rgb(255,255,255,0.7);
+  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-nav li {
-  float: left;
+.readabilitySingle {
+  background-color: rgb(255,255,255,0.7);
+  border-radius: 10px;
+  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0;
 }
 
-nav li a {
-  display: block;
-  color: white;
+
+
+.largeheading {
+  font-size: 30px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-nav li a:hover {
-  background-color: #111;
+#accessibilitytext {
+  font-size: 20px;
 }

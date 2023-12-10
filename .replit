@@ -10,5 +10,4 @@ language = "nodejs"
 
 [deployment]
 deploymentTarget = "static"
-build = ["sh", "-c", "npm run dev"]
-publicDir = "dist"
+publicDir = "src"

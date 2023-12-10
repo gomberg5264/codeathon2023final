@@ -18,7 +18,7 @@ const Home = () => {
         <source src="foodforeveryone.mp4" type="video/mp4" />
       </video>
      </p>
-       <p></p>
+       <p class="centered-text">Below is a map that highlights the areas of the world that are the most hungry. We prioritize shipping food to red areas. </p>
        <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="100%" title="Iframe Example"></iframe></p>
      </p>
      </div>
@@ -32,6 +32,7 @@ const Home = () => {
         <source src="foodforeveryone.mp4" type="video/mp4" />
       </video>
      </p>
+       <p class="centered-text">Below is a map that highlights the areas of the world that are the most hungry. We prioritize shipping food to red areas. </p>
        <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="640px" title="Iframe Example"></iframe></p>
      </p>
        
@@ -167,7 +168,6 @@ const AboutUs = () => {
 
 const Donations = () => (
   <div>
-    <img src="/src/qrcode.png" alt="QR Code" height="100px"/>
     <p class="readabilityTop">
       We invite you to support our mission to continue providing free food to those in need in third-world countries and to the food-insecure population in the USA. Please consider scanning this QR code to make a donation. Every contribution, no matter the size, makes a difference. Legal disclaimer: Please note, this page is a simulated project and part of a portfolio piece. The represented company is fictitious. Do not make any donations through this site.
     </p>

@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("cartoon.png");
+    background-attachment: fixed;
 
   }
 
@@ -230,4 +231,8 @@ a {
   border-color: grey;
   border-style: solid;
   margin: 2px
+}
+
+.centered-text {
+  text-align: center;
 }

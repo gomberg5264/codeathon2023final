@@ -71,24 +71,58 @@ const ApplyHere = () => (
   </div>
 )
 
-const ContactUs = () => <div> 
- <p class="readabilityTop largeheading"><b>Meet the team!</b></p>
-  <p class="readabilityMid">
-  <table class="contactTable">
-    <p>Please email us buyer@techblognow.com if you have any problems</p>
-    <tr>
-    <td>Maxwell Gomberg</td>
-      <td>Co-Founder, AI Trainer, and Developer</td>
-    </tr>
-    <tr>
-    <td>Pierce Workman</td>
-      <td>Co-Founder, Developer, and CSS Styler</td>
-    </tr>
-  </table>
-  </p>
-  <p class="readabilityBottom"></p>
+const ContactUs = () => {
   
-</div>;
+  const isMobile = window.innerWidth < 768;
+  console.log(isMobile);
+
+    return (
+  <div>
+        {isMobile ? (
+    <div>
+     <p class="readabilityTop largeheading"><b>Meet the team!</b></p>
+      <p class="readabilityMid">
+        <p class="centered-text">Please email us buyer@techblognow.com if you have any problems</p>
+
+        <p class="centered-text">Maxwell Gomberg<br/><img src="/gambler.png" alt="Maxwell's Profile Picture" height="200px"/></p>
+        <p class="centered-text">Co-Founder, AI Trainer, and Developer I am the owner of 50 websites, including techblognow.com, maxwell.page, oldenglishsheepdog.org, nyc.ventures, https://newyearsballdrop.com and many more. You can contact him at maxwellgomberg06@techblognow.com</p>
+        <p class="centered-text">Pierce Workman<br/>
+        <img src="/trans-makaira.png" alt="Pierce's Profile Picture" height="200px"/><p class="centered-text">Pierce is the co-founder, Developer, Blog Maintainer, and CSS Stylist for Food for Everyone. You can contact them at pierce.workman360@gmail.com</p></p></p>
+      
+     
+
+      <p class="readabilityBottom"></p>
+
+
+    </div>
+        ) : (
+    <div>
+     <p class="readabilityTop largeheading"><b>Meet the team!</b></p>
+      <p class="readabilityMid">
+      <table class="contactTable">
+        <p>Please email us buyer@techblognow.com if you have any problems</p>
+        <tr>
+        <td>Maxwell Gomberg<br/><img src="/gambler.png" alt="Maxwell's Profile Picture" height="200px"/></td>
+          <td width="400px">Co-Founder, AI Trainer, and Developer I am the owner of 50 websites, including techblognow.com, maxwell.page, oldenglishsheepdog.org, nyc.ventures, https://newyearsballdrop.com and many more. You can contact him at maxwellgomberg06@techblognow.com</td>
+        </tr>
+        <tr>
+        <td>Pierce Workman<br/><img src="/trans-makaira.png" alt="Pierce's Profile Picture" height="200px"/></td>
+          <td>Pierce is the co-founder, Developer, Blog Maintainer, and CSS Stylist for Food for Everyone. You can contact them at pierce.workman360@gmail.com</td>
+        </tr>
+      </table>
+      </p>
+      <p class="readabilityBottom"></p>
+
+
+    </div>
+        )}
+  </div>
+    );
+}
+
+  
+  ;
+
 const AboutUs = () => (
   <div>
   <p class="largeheading readabilityTop"><b>About Us</b><br/></p>

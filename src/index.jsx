@@ -4,28 +4,43 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 
-const Home = () => (
+const Home = () => {
+   const isMobile = window.innerWidth < 768; // Example breakpoint for mobile layout
+     return (
    <div>
-      <p class="largeheading readabilityTop"><b>Welcome to Food for Everyone!</b><br/></p>
-     <p class="readabilityMid"><p id="homepagetext1">Food is something that is necessary to survive. Unfortunately there are poor places in the world where people go to bed hungry every night. Food for Everyone has a solution! See our <a href="/about">Mission Statement!</a> To see what our goals are.<br/><br/>Watch the video below for a brief technical overview on how we plan to reach these goals. </p></p>
-<p class="readabilityBottom">
-  <p id="homepagevideo">
-     <video id="homepagevideoembed" width="320" height="240" controls>
-       <source src="foodforeveryone.mp4" type="video/mp4" />
-     </video>
-  
-  </p>
-
-
-
-   </p>
-   
-   
-   
-   
-   
-   
+         {isMobile ? (
+     <div>
+       <p class="mobilelargeheading readabilityTop"><b>Welcome to Food for Everyone!</b><br/></p>
+      <p class="readabilityMid"><p id="homepagetext1mobile">Food is something that is necessary to survive. Unfortunately there are poor places in the world where people go to bed hungry every night. Food for Everyone has a solution! See our <a href="/about">Mission Statement!</a> To see what our goals are.<br/><br/>Watch the video below for a brief technical overview on how we plan to reach these goals. </p></p>
+     <p class="readabilityBottom">
+     <p id="homepagevideo">
+      <video id="homepagevideoembed" width="320" height="240" controls>
+        <source src="foodforeveryone.mp4" type="video/mp4" />
+      </video>
+     </p>
+       <p></p>
+       <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="100%" title="Iframe Example"></iframe></p>
+     </p>
+     </div>
+         ) : (
+     <div>
+       <p class="largeheading readabilityTop"><b>Welcome to Food for Everyone!</b><br/></p>
+      <p class="readabilityMid"><p id="homepagetext1">Food is something that is necessary to survive. Unfortunately there are poor places in the world where people go to bed hungry every night. Food for Everyone has a solution! See our <a href="/about">Mission Statement!</a> To see what our goals are.<br/><br/>Watch the video below for a brief technical overview on how we plan to reach these goals. </p></p>
+     <p class="readabilityBottom">
+     <p id="homepagevideo">
+      <video id="homepagevideoembed" width="320" height="240" controls>
+        <source src="foodforeveryone.mp4" type="video/mp4" />
+      </video>
+     </p>
+       <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="640px" title="Iframe Example"></iframe></p>
+     </p>
+       
+       
+     </div>
+         )}
    </div>
+     );
+   }
 
 
 
@@ -39,7 +54,7 @@ const Home = () => (
 
   
 
-);
+
 const Blog = () => (
   <div> 
     <p class="readabilityTop largeheading"><b>Blog</b></p>
@@ -123,14 +138,33 @@ const ContactUs = () => {
   
   ;
 
-const AboutUs = () => (
-  <div>
-  <p class="largeheading readabilityTop"><b>About Us</b><br/></p>
-    <p class="readabilityBottom">
-    We are a nonprofit organization committed to the belief that no one should suffer from starvation or die due to lack of food. To address this issue, we have formed a partnership with USPS and DHL to distribute food with a long shelf life, as well as water, to individuals facing hunger in third-world countries and to those in the USA who are food insecure. Our services are completely free of charge, and our operations are entirely funded through donations. 
-    Additionally, we offer a drone delivery option exclusively for individuals living in remote areas where standard delivery services like DHL or USPS are not available. </p>
-  </div>  
-)
+const AboutUs = () => {
+  const isMobile = window.innerWidth < 768; // Example breakpoint for mobile layout
+     return (
+   <div>
+         {isMobile ? (
+     <div>
+     <p class="mobilelargeheading readabilityTop"><b>Our Mission Statement</b><br/></p>
+       <p class="readabilityBottom">
+       We are a nonprofit organization committed to the belief that no one should suffer from starvation or die due to lack of food. To address this issue, we have formed a partnership with USPS and DHL to distribute food with a long shelf life, as well as water, to individuals facing hunger in third-world countries and to those in the USA who are food insecure. Our services are completely free of charge, and our operations are entirely funded through donations. 
+       Additionally, we offer a drone delivery option exclusively for individuals living in remote areas where standard delivery services like DHL or USPS are not available. </p>
+     </div> 
+         ) : (
+     <div>
+     <p class="largeheading readabilityTop"><b>Our Mission Statement</b><br/></p>
+       <p class="readabilityBottom">
+       We are a nonprofit organization committed to the belief that no one should suffer from starvation or die due to lack of food. To address this issue, we have formed a partnership with USPS and DHL to distribute food with a long shelf life, as well as water, to individuals facing hunger in third-world countries and to those in the USA who are food insecure. Our services are completely free of charge, and our operations are entirely funded through donations. 
+       Additionally, we offer a drone delivery option exclusively for individuals living in remote areas where standard delivery services like DHL or USPS are not available. </p>
+     </div> 
+         )}
+   </div>
+     );
+  
+  
+  
+   
+}
+
 const Donations = () => (
   <div>
     <img src="/src/qrcode.png" alt="QR Code" height="100px"/>

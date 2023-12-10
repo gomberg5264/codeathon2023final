@@ -236,3 +236,13 @@ a {
 .centered-text {
   text-align: center;
 }
+
+.mobilelargeheading {
+  font-size: 30px;
+  text-align: center;
+}
+
+#homepagetext1mobile {
+  margin-left: 5%;
+  margin-right: 5%;
+}

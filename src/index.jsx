@@ -12,21 +12,21 @@ const Home = () => {
      <div>
        <p class="mobilelargeheading readabilityTop"><b>Welcome to Food for Everyone!</b><br/></p>
       <p class="readabilityMid"><p id="homepagetext1mobile">Food is something that is necessary to survive. Unfortunately there are poor places in the world where people go to bed hungry every night. Food for Everyone has a solution! See our <a href="/about">Mission Statement!</a> To see what our goals are.<br/><br/>Watch the video below for a brief technical overview on how we plan to reach these goals. </p></p>
-     <p class="readabilityBottom">
+     <p class="readabilityMid">
      <p id="homepagevideo">
       <video id="homepagevideoembed" width="320" height="240" controls>
         <source src="foodforeveryone.mp4" type="video/mp4" />
       </video>
      </p>
        <p class="centered-text">Below is a map that highlights the areas of the world that are the most hungry. We prioritize shipping food to red areas. </p>
-       <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="100%" title="Iframe Example"></iframe></p>
+       <p class="centered-text"><iframe src="https://hungermap.wfp.org/" height="480px" width="98%" title="Iframe Example"></iframe></p>
      </p>
      </div>
          ) : (
      <div>
        <p class="largeheading readabilityTop"><b>Welcome to Food for Everyone!</b><br/></p>
       <p class="readabilityMid"><p id="homepagetext1">Food is something that is necessary to survive. Unfortunately there are poor places in the world where people go to bed hungry every night. Food for Everyone has a solution! See our <a href="/about">Mission Statement!</a> To see what our goals are.<br/><br/>Watch the video below for a brief technical overview on how we plan to reach these goals. </p></p>
-     <p class="readabilityBottom">
+     <p class="readabilityMid">
      <p id="homepagevideo">
       <video id="homepagevideoembed" width="320" height="240" controls>
         <source src="foodforeveryone.mp4" type="video/mp4" />
@@ -69,7 +69,7 @@ const Blog = () => (
     
     <p class="readabilityMid">Post by Pierce Workman<br/>11/1/2023<br/>Thank you to all who have donated so far! We finally have our AI models trained for our drones! We will begin deploying drones to remote countries in January of next year! <br/></p>
 
-    <p class="readabilityBottom"><br/>Post by Pierce Workman<br/>5/1/2023<br/>Thank you to all who donated during the month of April! We have some good news! We raised enough money to start our drone program! In case you haven't heard, the drone program will utilize drones powered by Artificial Intelligence to deliver food to remote areas who may not have access to DHL. With this, we will be once step closer to ending world hunger! We just need a few months to prepare and train the models. We hope to get the program ready sometime next year. Every cent counts! Great job everyone!<br/><p></p></p>
+    <p class="readabilityMid"><br/>Post by Pierce Workman<br/>5/1/2023<br/>Thank you to all who donated during the month of April! We have some good news! We raised enough money to start our drone program! In case you haven't heard, the drone program will utilize drones powered by Artificial Intelligence to deliver food to remote areas who may not have access to DHL. With this, we will be once step closer to ending world hunger! We just need a few months to prepare and train the models. We hope to get the program ready sometime next year. Every cent counts! Great job everyone!<br/><p></p></p>
 
    
 
@@ -107,7 +107,7 @@ const ContactUs = () => {
       
      
 
-      <p class="readabilityBottom"></p>
+      <p class="readabilityMid"></p>
 
 
     </div>
@@ -127,7 +127,7 @@ const ContactUs = () => {
         </tr>
       </table>
       </p>
-      <p class="readabilityBottom"></p>
+      <p class="readabilityMid"></p>
 
 
     </div>
@@ -146,14 +146,14 @@ const AboutUs = () => {
          {isMobile ? (
      <div>
      <p class="mobilelargeheading readabilityTop"><b>Our Mission Statement</b><br/></p>
-       <p class="readabilityBottom">
+       <p class="readabilityMid">
        We are a nonprofit organization committed to the belief that no one should suffer from starvation or die due to lack of food. To address this issue, we have formed a partnership with USPS and DHL to distribute food with a long shelf life, as well as water, to individuals facing hunger in third-world countries and to those in the USA who are food insecure. Our services are completely free of charge, and our operations are entirely funded through donations. 
        Additionally, we offer a drone delivery option exclusively for individuals living in remote areas where standard delivery services like DHL or USPS are not available. </p>
      </div> 
          ) : (
      <div>
      <p class="largeheading readabilityTop"><b>Our Mission Statement</b><br/></p>
-       <p class="readabilityBottom">
+       <p class="readabilityMid">
        We are a nonprofit organization committed to the belief that no one should suffer from starvation or die due to lack of food. To address this issue, we have formed a partnership with USPS and DHL to distribute food with a long shelf life, as well as water, to individuals facing hunger in third-world countries and to those in the USA who are food insecure. Our services are completely free of charge, and our operations are entirely funded through donations. 
        Additionally, we offer a drone delivery option exclusively for individuals living in remote areas where standard delivery services like DHL or USPS are not available. </p>
      </div> 
@@ -171,7 +171,7 @@ const Donations = () => (
     <p class="readabilityTop">
       We invite you to support our mission to continue providing free food to those in need in third-world countries and to the food-insecure population in the USA. Please consider scanning this QR code to make a donation. Every contribution, no matter the size, makes a difference. Legal disclaimer: Please note, this page is a simulated project and part of a portfolio piece. The represented company is fictitious. Do not make any donations through this site.
     </p>
-    <p class="readabilityBottom">
+    <p class="readabilityMid">
       <form class="forminput">
         <input type="text" placeholder="First Name"></input>
         <input type="text" placeholder="Last Name"></input>

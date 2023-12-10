@@ -9,5 +9,5 @@ channel = "stable-23_05"
 language = "nodejs"
 
 [deployment]
-deploymentTarget = "static"
-publicDir = "src"
+deploymentTarget = "cloudrun"
+run = ["sh", "-c", "npm run dev"]
